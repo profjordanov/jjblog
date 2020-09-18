@@ -1,11 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "sl92Wb6+t4W2zflgF0clGBI+XicixeQFZ/1LgWF7TVHvnXB4eJxB101/HYYniTQSKoT2gi36OGyVc9q5d0k23A==",
+  "dgSpecHash": "/StRHbLKAb37EMkxvaWM4JHETOfpmjNZadb4cGAHnkh2B4t0czb5DcTmqN3FQTYCV+26zxzO9uZK548I01iwIw==",
   "success": true,
   "projectFilePath": "C:\\Users\\yoyordan\\Documents\\GitHub\\jjblog\\backend\\Blog.Api\\Blog.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\yoyordan\\.nuget\\packages\\mediatr\\8.1.0\\mediatr.8.1.0.nupkg.sha512",
+    "C:\\Users\\yoyordan\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\8.1.0\\mediatr.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
+    "C:\\Users\\yoyordan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\yoyordan\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
-    "C:\\Users\\yoyordan\\.nuget\\packages\\microsoft.visualstudio.azure.kubernetes.tools.targets\\1.1.0\\microsoft.visualstudio.azure.kubernetes.tools.targets.1.1.0.nupkg.sha512"
+    "C:\\Users\\yoyordan\\.nuget\\packages\\microsoft.visualstudio.azure.kubernetes.tools.targets\\1.1.0\\microsoft.visualstudio.azure.kubernetes.tools.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\yoyordan\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\yoyordan\\.nuget\\packages\\yngstrs.common\\1.0.1\\yngstrs.common.1.0.1.nupkg.sha512"
   ],
   "logs": []
 }

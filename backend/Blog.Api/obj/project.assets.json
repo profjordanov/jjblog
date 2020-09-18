@@ -118,11 +118,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yoyordan\\Documents\\GitHub\\jjblog\\Blog\\Blog.Api\\Blog.Api.csproj",
+      "projectUniqueName": "C:\\Users\\yoyordan\\Documents\\GitHub\\jjblog\\backend\\Blog.Api\\Blog.Api.csproj",
       "projectName": "Blog.Api",
-      "projectPath": "C:\\Users\\yoyordan\\Documents\\GitHub\\jjblog\\Blog\\Blog.Api\\Blog.Api.csproj",
+      "projectPath": "C:\\Users\\yoyordan\\Documents\\GitHub\\jjblog\\backend\\Blog.Api\\Blog.Api.csproj",
       "packagesPath": "C:\\Users\\yoyordan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yoyordan\\Documents\\GitHub\\jjblog\\Blog\\Blog.Api\\obj\\",
+      "outputPath": "C:\\Users\\yoyordan\\Documents\\GitHub\\jjblog\\backend\\Blog.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

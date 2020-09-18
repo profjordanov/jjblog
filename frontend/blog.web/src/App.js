@@ -7,7 +7,7 @@ function App() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch("https://get.geojs.io/v1/ip/country.json?ip=8.8.8.8", {
+    fetch("https://localhost:9001/api/articles", {
       headers: {
         'Content-Type': 'application/json'
       },
@@ -21,7 +21,12 @@ function App() {
               console.error(error);
             }
         )
-  }, [])
+  }, []);
+
+    const imgStyle = {
+        width: "25%",
+        height: "25%"
+    };
 
   return (
     <div className="App">
@@ -29,8 +34,10 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <ul>
           {items.map(item => (
-              <li key={item.name}>
-                {item.name}
+              <li key={item.id}>
+                {item.title}
+                  <br/>
+                  <img src={item.image} alt="Logo" style={imgStyle} />
               </li>
           ))}
         </ul>

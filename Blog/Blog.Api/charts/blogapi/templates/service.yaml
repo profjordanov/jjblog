@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "blogapi.fullname" . }}
+  labels:
+    app: {{ template "blogapi.name" . }}
+    chart: {{ template "blogapi.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ template "blogapi.name" . }}
+    release: {{ .Release.Name }}

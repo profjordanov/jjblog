@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Sd4i0xOQmFgfopovVd1fvkIs15JKvoAP68F2YOanVZTCuo+WFIgJvufMJbFkuDB61rAAkMZ+CmNH13UsvFMKow==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\yoyordan\\Documents\\GitHub\\jjblog\\Blog\\Blog.Api\\Blog.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yoyordan\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
+    "C:\\Users\\yoyordan\\.nuget\\packages\\microsoft.visualstudio.azure.kubernetes.tools.targets\\1.1.0\\microsoft.visualstudio.azure.kubernetes.tools.targets.1.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

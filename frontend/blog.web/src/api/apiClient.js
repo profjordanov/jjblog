@@ -1,5 +1,3 @@
-export const BASE_URL = "https://mock-services-dev.apps.dev02-emea.hck8s.me/";
-
 export function get(url) {
     return fetchWrapper(url, "GET");
 }
@@ -15,6 +13,7 @@ async function fetchWrapper(url, method, body) {
             },
             body: body && JSON.stringify(body)
         });
+        console.log(response);
         return await handleResponse(response);
     } catch (error) {
         return handleError(error);
@@ -26,6 +25,7 @@ async function handleResponse(response) {
 
     if (contentType && contentType.indexOf("application/json") !== -1) {
         const responseToJson = await response.json();
+        console.log(response);
 
         if (response.ok) {
             return responseToJson;

@@ -6,9 +6,7 @@ async function fetchWrapper(url, method, body) {
     try {
         let response = await fetch(url, {
             method,
-            credentials: "include",
             headers: {
-                Accept: "application/json",
                 "Content-Type": "application/json"
             },
             body: body && JSON.stringify(body)
@@ -21,18 +19,8 @@ async function fetchWrapper(url, method, body) {
 }
 
 async function handleResponse(response) {
-    const contentType = response.headers.get("content-type");
-
-    if (contentType && contentType.indexOf("application/json") !== -1) {
-        const responseToJson = await response.json();
-        console.log(response);
-
-        if (response.ok) {
-            return responseToJson;
-        } else {
-            throw responseToJson;
-        }
-    }
+    const responseToJson = await response.json();
+    return responseToJson;
 }
 
 function handleError(error) {

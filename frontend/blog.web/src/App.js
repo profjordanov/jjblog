@@ -1,26 +1,22 @@
 import React, {useEffect, useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import * as service from './api/customersService'
+import * as articlesService from './api/articlesService'
 
 function App() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch("https://localhost:9001/api/articles", {
-      headers: {
-        'Content-Type': 'application/json'
-      },
-    })
-        .then(res => res.json())
-        .then(
-            (result) => {
-              setItems(result);
-            },
-            (error) => {
-              console.error(error);
-            }
-        )
+      articlesService
+          .get()
+          .then(
+              (result) => {
+                  setItems(result);
+              },
+              (error) => {
+                  console.error(error);
+              }
+          );
   }, []);
 
     const imgStyle = {

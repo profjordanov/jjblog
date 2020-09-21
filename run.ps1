@@ -1,0 +1,2 @@
+Start-Process -FilePath 'dotnet' -WorkingDirectory 'C:\Users\yoyordan\Documents\GitHub\jjblog\backend\Blog.Api' -ArgumentList 'run Blog.Api.csproj'
+Start-Process -FilePath 'yarn' -WorkingDirectory 'C:\Users\yoyordan\Documents\GitHub\jjblog\frontend\blog.web' -ArgumentList 'start'

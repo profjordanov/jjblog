@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b95eb872-eb11-4130-ad18-4bf15105e9c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/articles/ArticlesList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/articles/ArticlesPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/actionTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/articleActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/configureStore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/articleReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,7 +63,7 @@
       <updated>1600721730224</updated>
       <workItem from="1600721735354" duration="1421000" />
       <workItem from="1600723265260" duration="854000" />
-      <workItem from="1600752210009" duration="244000" />
+      <workItem from="1600752210009" duration="16614000" />
     </task>
     <servers />
   </component>

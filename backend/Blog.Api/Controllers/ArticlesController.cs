@@ -14,17 +14,7 @@ namespace Blog.Api.Controllers
         [HttpGet]
         public IEnumerable<Article> Get()
         {
-            var result = new Article[]
-            {
-                new Article
-                {
-                    Id = Guid.NewGuid(),
-                    Title = "Title",
-                    Description = "Description",
-                    Image = "https://cdn.jpegmini.com/user/images/slider_puffin_jpegmini_mobile.jpg"
-                }
-            };
-            return result;
+            return Startup.Articles;
         }
 
         // GET api/<ArticlesController>/5
@@ -36,8 +26,16 @@ namespace Blog.Api.Controllers
 
         // POST api/<ArticlesController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult Post([FromBody] Article article)
         {
+            if (article.Id == default)
+            {
+                article.Id = Guid.NewGuid();
+            }
+
+            Startup.Articles.Add(article);
+
+            return Ok(article);
         }
 
         // PUT api/<ArticlesController>/5

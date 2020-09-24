@@ -1,4 +1,7 @@
+using System;
+using System.Collections.Generic;
 using Blog.Api.Configuration;
+using Blog.Api.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -14,6 +17,17 @@ namespace Blog.Api
         {
             Configuration = configuration;
         }
+
+        public static List<Article> Articles = new List<Article>
+        {
+            new Article
+            {
+                Id = Guid.NewGuid(),
+                Title = "Title",
+                Description = "Description",
+                Image = "https://cdn.jpegmini.com/user/images/slider_puffin_jpegmini_mobile.jpg"
+            }
+        };
 
         public IConfiguration Configuration { get; }
 

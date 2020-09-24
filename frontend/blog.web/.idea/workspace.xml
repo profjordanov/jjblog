@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b95eb872-eb11-4130-ad18-4bf15105e9c5" name="Default Changelist" comment="" />
+    <list default="true" id="b95eb872-eb11-4130-ad18-4bf15105e9c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/articles/ArticlesForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/TextInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/apiClient.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/apiClient.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/articlesService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/articlesService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/articles/ArticlesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/articles/ArticlesPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/actionTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/articleActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/articleActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/articleReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/articleReducer.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +61,7 @@
       <workItem from="1600721735354" duration="1421000" />
       <workItem from="1600723265260" duration="854000" />
       <workItem from="1600752210009" duration="16614000" />
-      <workItem from="1600983238733" duration="327000" />
+      <workItem from="1600983238733" duration="3063000" />
     </task>
     <servers />
   </component>

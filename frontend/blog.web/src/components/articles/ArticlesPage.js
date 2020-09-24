@@ -4,17 +4,36 @@ import * as articleActions from "../../redux/actions/articleActions";
 import PropTypes from "prop-types";
 import { toast } from "react-toastify";
 import ArticlesList from "./ArticlesList";
+import ArticlesForm from "./ArticlesForm";
 
-export function ArticlesPage({ articles, loadArticles}) {
+export function ArticlesPage({ articles, loadArticles, saveArticle}) {
+    const [article, setArticle] = useState({ });
 
     useEffect(() => {
         loadArticles();
     }, []);
 
+    function handleSave(event) {
+        event.preventDefault();
+        saveArticle(article)
+            .then(() => {
+                toast.success("Article saved.");
+            })
+            .catch(error => {
+                throw error;
+            });
+    }
 
     return (
-        //<p>Test</p>
-        <ArticlesList articles={articles}/>
+        <div>
+            <h1>Welcome</h1>
+            <br/>
+            <hr/>
+            <ArticlesList articles={articles}/>
+            <hr/>
+            <hr/>
+            <ArticlesForm article={article} onSave={handleSave}/>
+        </div>
     );
 }
 
@@ -31,7 +50,8 @@ function mapStateToProps(state) {
 }
 
 const mapDispatchToProps = {
-    loadArticles: articleActions.loadArticles
+    loadArticles: articleActions.loadArticles,
+    saveArticle: articleActions.saveArticle
 };
 
 export default connect(

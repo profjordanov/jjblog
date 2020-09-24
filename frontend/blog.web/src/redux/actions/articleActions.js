@@ -7,6 +7,10 @@ export function loadArticlesSuccess(articles) {
     return { type: ActionTypes.LOAD_ARTICLES_SUCCESS, articles };
 }
 
+export function createArticlesSuccess(article) {
+    return { type: ActionTypes.CREATE_ARTICLE_SUCCESS, article };
+}
+
 export function loadArticles() {
     return function(dispatch) {
         return articleApi
@@ -19,4 +23,17 @@ export function loadArticles() {
                 throw error;
             });
     };
+}
+
+export function saveArticle(article) {
+    return function(dispatch) {
+        return articleApi
+            .save(article)
+            .then(savedArticle =>{
+                dispatch(createArticlesSuccess(savedArticle));
+            })
+            .catch(error => {
+                throw error;
+            });
+    }
 }

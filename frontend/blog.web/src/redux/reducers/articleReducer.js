@@ -7,6 +7,9 @@ export function articleReducer(state = initialState, action) {
             console.log("Reducer" + JSON.stringify(action.articles));
             return action.articles;
         }
+        case ActionTypes.CREATE_ARTICLE_SUCCESS:{
+            return [...state, { ...action.article }];
+        }
         default:
             return state;
     }

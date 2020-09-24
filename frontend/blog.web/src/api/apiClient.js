@@ -2,6 +2,10 @@ export function get(url) {
     return fetchWrapper(url, "GET");
 }
 
+export function post(url, body) {
+    return fetchWrapper(url, "POST", body);
+}
+
 async function fetchWrapper(url, method, body) {
     try {
         let response = await fetch(url, {
